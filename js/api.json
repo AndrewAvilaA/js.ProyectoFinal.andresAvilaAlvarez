@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "nombre": "AIMAINA",
+        "tipo": "HATSUNE MIKU / MUSICA",
+        "precio": 4000,
+        "descripcion": "Muñeca de Hatsune Miku, en la versión de los videoclips del artista PinocchioP."
+    },
+    {
+        "id": 2,
+        "nombre": "ARIEL - LA SIRENITA",
+        "tipo": "PRINCESA DISNEY",
+        "precio": 4000,
+        "descripcion": "Nuestra princesa protagonista de la película de Disney 'La Sirenita' de 1989."
+    },
+    {
+        "id": 3,
+        "nombre": "AURORA - LA BELLA DURMIENTE",
+        "tipo": "PRINCESA DISNEY",
+        "precio": 4000 ,
+        "descripcion": "Nuestra princesa protagonista de la película de Disney 'La Bella Durmienta' de 1959."
+    },
+    {
+        "id": 4,
+        "nombre": "BLANCANIEVES",
+        "tipo": "PRINCESA DISNEY",
+        "precio": 4000,
+        "descripcion": "Nuestra princesa protagonista de la película de Disney 'Blancanieves' de 1937."
+    },
+    {
+        "id": 5,
+        "nombre": "DINO",
+        "tipo": "ANIMALES - DINOSAURIOS",
+        "precio": 4200,
+        "descripcion": "Un amigable dinosaurio de apego."
+    },
+    {
+        "id": 6,
+        "nombre": "DOLORES - ENCANTO",
+        "tipo": "PRINCESA DISNEY",
+        "precio": 4500,
+        "descripcion": "De la película de Disney 'Encanto' de 2021"
+    },
+    {
+        "id": 7,
+        "nombre": "GROGU - BABY YODA",
+        "tipo": "STAR WARS - THE MANDALORIAN",
+        "precio": 4500,
+        "descripcion": "El pequeño compañero y protegido de Djin Darin ('Mando') en la serie 'The Mandalorian'."
+    },
+    {
+        "id": 8,
+        "nombre": "HIPPO - HIPOPÓTAMO",
+        "tipo": "ANIMALES",
+        "precio": 4000 ,
+        "descripcion": "Un simpático y adorable hipopótamo de apego."
+    },
+    {
+        "id": 9,
+        "nombre": "SUPER MARIO",
+        "tipo": "MARIO BROS - NINTENDO - GAMES - GAMING",
+        "precio": 4800,
+        "descripcion": "El popular protagonista del videojuego más famoso de todos los tiempos."
+    },
+    {
+        "id": 10,
+        "nombre": "LUIGI",
+        "tipo": "MARIO BROS - NINTENDO - GAMES - GAMING",
+        "precio": 4800,
+        "descripcion": "El popular compañero de Mario en el videojuego más famoso de todos los tiempos."
+    },
+    {
+        "id": 11,
+        "nombre": "LADYBUG",
+        "tipo": "MIRACULOUS",
+        "precio": 4000,
+        "descripcion": "De la serie 'Miraculous'."
+    },
+    {
+        "id": 12,
+        "nombre": "LEIA",
+        "tipo": "STAR WARS",
+        "precio": 4000 ,
+        "descripcion": "La princesa más famosa de toda la galaxia, de los filmes originales de 'Star Wars'."
+    },
+    {
+        "id": 13,
+        "nombre": "MIRABEL - ENCANTO",
+        "tipo": "PRINCESA DISNEY",
+        "precio": 4400,
+        "descripcion": "De la película de Disney 'Encanto' de 2021."
+    },
+    {
+        "id": 14,
+        "nombre": "MOANA",
+        "tipo": "PRINCESA DISNEY",
+        "precio": 4400,
+        "descripcion": "De la película de Disney 'Moana' de 2016."
+    },
+    {
+        "id": 15,
+        "nombre": "MOZART",
+        "tipo": "HISTORIA - MUSICA",
+        "precio": 4400,
+        "descripcion": "El gran compositor del clasisismo, ¡tejido a mano!."
+    },
+    {
+        "id": 16,
+        "nombre": "PADME AMIDALA",
+        "tipo": "STAR WARS",
+        "precio": 4800,
+        "descripcion": "La reina de Naboo, senadora de la República y madre de Luke y Leia, de la segunda trilogía de 'Star Wars'."
+    },
+    {
+        "id": 17,
+        "nombre": "SERENA - USAGI TSUKINO",
+        "tipo": "SAILOR MOON - ANIME",
+        "precio": 4400,
+        "descripcion": "La protagonista del popular anime japonés 'Sailor Moon', de 1992."
+    },
+    {
+        "id": 18,
+        "nombre": "TIGER - TIGER",
+        "tipo": "ANIMALES",
+        "precio": 4200,
+        "descripcion": "Un amoroso tigre de apego."
+    },
+    {
+        "id": 19,
+        "nombre": "TORTUGA",
+        "tipo": "ANIMALES",
+        "precio": 4800,
+        "descripcion": "Una grande y tierna tortuga de mar."
+    }
+]

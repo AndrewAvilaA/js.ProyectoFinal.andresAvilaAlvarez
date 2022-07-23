@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/appShop.js"></script>
+    <script defer src="./js/appCarteles.js"></script>
+    <script defer src="./js/alertas.js"></script>
+    <script defer src="./js/funciones.js"></script>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Deepika Tejidos - Home</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-personal">
+            <div class="container-fluid">
+              <a class="navbar-brand">DEEPIKA TEJIDOS</a>
+              <div class="d-flex" role="search">
+                <div class="pe-3" id="spanCarrito"><span></span></div>
+                <a href="./carrito.html" class="btn btn-outline-secondary"><i class="bi bi-cart"></i></a>
+                <input type="text" class="form-control ms-4" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2" id="inputBuscar">
+                <button type="button" class="btn btn-outline-secondary" id="botonBuscar">Buscar</button>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container-fluid p-1">
+        <h1 class="pt-3 pb-3">
+            Deepika Tejidos - Tienda Online
+        </h1>
+        <article class="card text-center ms-5 me-5 p-3">
+                <p>¡Te damos la bienvenida a nuestra tienda de tejidos! Vas a poder acceder a todo nuestro catálogo de amigurumis 💗</p>
+                <p>El amigurumi es un muñeco tejido a crochet siguiendo una tradicional técnica japonesa 🎌</p>
+                <p>También vas a poder cotizar y encargar un carteles tejidos a mano, para regalarle a tus afectos o embellecer tu hogar 🎀</p>
+                <p>También podés buscar amigurumis por nombre o por tipo dentro de nuestro catálogo 🔎</p>
+        </article>
+        <article class="row card text-center m-5">
+            <h4 class="p-3">Búsquedas</h4>
+                <section class="row row-cols-1 row-cols-md-5 g-1" id="busquedaDOM">
+                </section>
+                <p id="footerBusquedaDOM">---</p>
+        </article>
+        <article class="row card text-center m-5">
+            <h4 class="p-3">Catálogo Completo</h4>
+            <div class="row row-cols-1 row-cols-md-5 g-1" id="catalogoDOM"></div>
+        </article>
+    </main>
+    <section class = "container-fluid p-2">
+        <div class="me-5 ms-5">
+            <div class="card text-center m-2">
+                <div class="card-body">
+                    <h4 class="text-center p-3">Carrito - Tienda Deepika</h4>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">Item</th>
+                              <th scope="col">Cantidad</th>
+                              <th scope="col"></th>
+                              <th scope="col">Total</th>
+                         </tr>
+                          </thead>
+                          <tbody id="items"></tbody>
+                          <tfoot>
+                            <tr id="footer">
+                              <th scope="row" colspan="5" class="text-center">Tu carrito está vacío.</th>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <div id="botonConfirma"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="me-5 ms-5">
+            <div class="card text-center m-2">
+                <div class="card-body">
+                    <h2 class="pb-3">
+                        ¡Cartel personal!
+                    </h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control ms-4" placeholder="Tu cartel personalizado" aria-label="Recipient's username" aria-describedby="button-addon2" id="inputCartel">
+                        <button type="button" class="btn btn-outline-secondary me-4" id="botonCartel" >Crear Cartel</button>
+                    </div>
+                    <div id = "cartelPersonalDOM">
+                    <h5>Escribí el nombre o mensaje que querés en tu cartel. Vamos a decirte cuánto cuesta 😊</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="me-5 ms-5">
+            <div class="card text-center m-2">
+                <div class="card-body">
+                    <h2>Tus carteles cotizados</h2>
+                    <button type="button" class="btn btn-outline-secondary" id="botonListarCarteles" >Ver</button> <button type="button" class="btn btn-outline-secondary" id="botonOcultarCarteles" >Ocultar</button> <button type="button" class="btn btn-outline-secondary" id="botonClearStorage">Borrar Historial</button>
+                    <ul class="p-2" id="listaDeCarteles"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar Carrito
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+  </template>
+    
+  <template id="template-carrito">
+      <tr>
+        <th scope="row"></th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+  </template>
+</body>
+</html>

@@ -1,0 +1,65 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornsilk;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: grey;
+}
+
+.bg-personal{
+    background-color: rgb(238, 225, 174);
+}
+
+.navbar-brand, .texto-card, .table{
+    color: grey;
+}
+
+.table{
+    background-color: white;
+}
+
+h1, section{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+.btn-info {
+    --bs-btn-color: #000;
+    --bs-btn-bg: rgb(238, 225, 174);
+    --bs-btn-border-color: cornsilk;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: rgb(199, 186, 135);
+    --bs-btn-hover-border-color: rgb(199, 186, 135);
+    --bs-btn-focus-shadow-rgb: red;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: rgb(199, 186, 135);
+    --bs-btn-active-border-color: rgb(199, 186, 135);
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: cornsilk;
+    --bs-btn-disabled-border-color: cornsilk;
+}
+
+.btn-danger {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: grey;
+    --bs-btn-border-color: grey;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgb(109, 109, 109);
+    --bs-btn-hover-border-color: rgb(109, 109, 109);
+    --bs-btn-focus-shadow-rgb: red;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgb(109, 109, 109);
+    --bs-btn-active-border-color: rgb(109, 109, 109);
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: grey;
+    --bs-btn-disabled-border-color: grey;
+}
